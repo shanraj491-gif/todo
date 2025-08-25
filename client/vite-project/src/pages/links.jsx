@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const links = () => {
+const Links = () => {
+  const navigate = useNavigate();
+
   return (
-    <button onClick={navigate('/register')}>register</button>
-  )
-}
+    <button onClick={() => navigate('/register')}>Register</button>
+  );
+};
 
-export default links
+export default Links;
