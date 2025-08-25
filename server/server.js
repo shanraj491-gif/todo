@@ -9,7 +9,7 @@ const todoRoutes=require('./routes/todoRoutes.js');
 dotenv.config();
 
 const app = express();
-app.use(cors({origin:'http://localhost:5173', credentials :true}));
+app.use(cors({origin:'https://todo-rho-gilt-82.vercel.app/', credentials :true}));
 
 mongoose.connect(process.env.MONGODB_URL)
   .then(() => console.log('MongoDB Connected'))
