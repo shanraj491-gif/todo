@@ -21,7 +21,7 @@ function Login() {
       if (!res.ok) throw new Error(data.message || 'Login failed');
 
       alert('Login successful');
-      navigate('/');
+      navigate('/todo');
     } catch (err) {
       alert(err.message);
     }
