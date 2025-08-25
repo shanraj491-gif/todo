@@ -8,7 +8,7 @@ function Todo() {
 
   const fetchTodos = async () => {
     try {
-      const res = await fetch("http://localhost:5000/todo", {
+      const res = await fetch("https://todo-iz7q.onrender.com/todo", {
         method: "GET",
         credentials: "include",
       });
@@ -28,7 +28,7 @@ function Todo() {
   const addTodo = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5000/todo", {
+      const res = await fetch("https://todo-iz7q.onrender.com/todo", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -44,7 +44,7 @@ function Todo() {
 
   const toggleTodo = async (id) => {
     try {
-      const res = await fetch(`http://localhost:5000/todo/${id}`, {
+      const res = await fetch(`https://todo-iz7q.onrender.com/todo/${id}`, {
         method: "PUT",
         credentials: "include",
       });
@@ -57,7 +57,7 @@ function Todo() {
 
   const deleteTodo = async (id) => {
     try {
-      await fetch(`http://localhost:5000/todo/${id}`, {
+      await fetch(`https://todo-iz7q.onrender.com/todo/${id}`, {
         method: "DELETE",
         credentials: "include",
       });
